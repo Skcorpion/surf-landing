@@ -4,7 +4,7 @@
   "description": "start using gulp",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Roman Zubko",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "slick-carousel": "^1.8.1"
   }
 }
