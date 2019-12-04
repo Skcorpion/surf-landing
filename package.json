@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "start using gulp",
   "main": "index.js",
+  "homepage": "https://skcorpion.github.io/surf-landing/",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
