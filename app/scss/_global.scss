@@ -35,22 +35,38 @@ li {
   margin: 0 auto;
 }
 
-.headline-left {
+.headline {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
   opacity: 0.5;
-  padding-left: 103px;
   position: relative;
   display: inline-block;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 1px;
-    background-color: #fff;
-    left: 0;
-    top: 50%;
+
+  &-left {
+    padding-left: 103px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+      left: 0;
+      top: 50%;
+    }
+  }
+
+  &-right {
+    padding-right: 103px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #fff;
+      right: 0;
+      top: 50%;
+    }
   }
 }
 
@@ -99,6 +115,10 @@ li {
   }
 }
 
+.subtitle.subtitle-left {
+  text-align: left;
+}
+
 .btn {
   font-size: 40px;
   line-height: 36px;
@@ -132,4 +152,12 @@ li {
       transform: translateY(-50%);
     }
   }
+}
+
+.surf,
+.travel {
+  padding: 160px 0px 120px;
+}
+.travel {
+  padding-bottom: 265px;
 }
