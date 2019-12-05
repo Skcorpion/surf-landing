@@ -301,6 +301,7 @@
 
   .slick-list {
     min-height: 635px;
+    overflow: visible;
   }
   .slick-current {
     .slider-dots__content {
@@ -395,7 +396,7 @@
 
   &--1 {
     top: 335px;
-    left: 40px;
+    left: 0;
     .slider-dots__content {
       transform: translateX(0);
       &::before {
