@@ -35,7 +35,7 @@ $(function() {
     focusOnSelect: true
   });
 
-  $(".holder__slider").slick({
+  $(".holder__slider, .shop__slider").slick({
     infinite: true,
     fade: true,
     speed: 500,
@@ -95,4 +95,8 @@ $(function() {
     1;
 
   $(".summ").html("$" + summ);
+
+  $(".surfboard-box__circle").on("click", function() {
+    $(this).toggleClass("active");
+  });
 });
