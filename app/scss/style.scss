@@ -31,9 +31,9 @@
 
   &-title {
     font-weight: 800;
-    font-size: 80px;
-    line-height: 86px;
-    margin-bottom: 48px;
+    font-size: 2rem;
+    line-height: 1.075;
+    margin-bottom: 0.6em;
   }
 
   &-suptext {
@@ -42,9 +42,9 @@
 
   &-text {
     font-weight: 800;
-    font-size: 40px;
-    line-height: 46px;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.15;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -83,12 +83,12 @@
   &__number {
     font-weight: 800;
     font-size: 24px;
-    line-height: 34px;
+    line-height: 1.4;
   }
 
   &__name {
     font-weight: 300;
-    line-height: 19px;
+    line-height: 1.2;
     text-transform: capitalize;
   }
 }
@@ -98,11 +98,11 @@
   top: 0;
   left: -0.97%;
   font-weight: 800;
-  font-size: 200px;
-  line-height: 156px;
+  font-size: 5rem;
+  line-height: 0.78;
   opacity: 0.07;
   max-width: 467px;
-  z-index: 5;
+  z-index: 2;
 }
 
 .header__aside {
@@ -113,10 +113,21 @@
   border-right: 1px solid rgba(#ffffff, 0.25);
   text-align: center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logo {
+    img {
+      height: 25vh;
+    }
+  }
 }
 
 .menu {
-  padding-top: 40px;
+  // padding-top: 40px;
+  margin-bottom: 1vh;
+  min-width: 100px;
 
   a span {
     display: block;
@@ -125,28 +136,32 @@
     line-height: 14px;
     letter-spacing: 3px;
     padding-top: 6px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     text-transform: capitalize;
+  }
+
+  li {
+    margin-bottom: 3vh;
   }
 }
 
 .header__search {
-  padding: 15px 0px 35px;
+  // padding: 15px 0px 35px;
 }
 
 .header__date {
   font-weight: 800;
   font-size: 72px;
-  line-height: 64px;
+  line-height: 0.9;
 
   span {
-    padding-top: 15px;
+    padding-top: 0.375rem;
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 1.4px;
     display: block;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 }
 
@@ -175,6 +190,11 @@
   right: 0;
   top: 0;
   z-index: 3;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .header__arrows {

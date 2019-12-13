@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 40px;
 }
 
 *,
@@ -36,19 +37,22 @@ li {
 }
 
 .headline {
-  font-size: 22px;
-  line-height: 32px;
+  // font-size: 22px;
+  font-size: 0.55rem;
+  line-height: 1.4;
   letter-spacing: 7.33333px;
   opacity: 0.5;
   position: relative;
   display: inline-block;
 
   &-left {
-    padding-left: 103px;
+    // padding-left: 103px;
+    padding-left: 2.57rem;
     &::before {
       content: "";
       position: absolute;
-      width: 80px;
+      // width: 80px;
+      width: 2rem;
       height: 1px;
       background-color: #fff;
       left: 0;
@@ -57,11 +61,13 @@ li {
   }
 
   &-right {
-    padding-right: 103px;
+    // padding-right: 103px;
+    padding-right: 2.57rem;
     &::before {
       content: "";
       position: absolute;
-      width: 80px;
+      // width: 80px;
+      width: 2rem;
       height: 1px;
       background-color: #fff;
       right: 0;
